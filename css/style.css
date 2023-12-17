@@ -1,0 +1,624 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v25-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/montserrat-v25-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/montserrat-v25-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/montserrat-v25-latin-regular.woff") format("woff"),
+    /* Modern Browsers */ url("../fonts/montserrat-v25-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/montserrat-v25-latin-regular.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v25-latin-500.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/montserrat-v25-latin-500.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/montserrat-v25-latin-500.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/montserrat-v25-latin-500.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/montserrat-v25-latin-500.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/montserrat-v25-latin-500.svg#Montserrat") format("svg"); /* Legacy iOS */
+}
+
+/* lora-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lora-v32-latin-regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/lora-v32-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/lora-v32-latin-regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/lora-v32-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/lora-v32-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/lora-v32-latin-regular.svg#Lora")
+      format("svg"); /* Legacy iOS */
+}
+
+/* header-styles-start */
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+.headerWrapper {
+  font-family: "Lora";
+  background-color: rgb(255, 255, 255);
+  font-style: normal;
+  font-size: 1.3vw;
+  display: flex;
+  height: 4vw;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 0.1vw solid black;
+}
+
+.headerWrapper .imgBlock {
+  flex-basis: 30%;
+}
+
+.logo {
+  width: 6vw;
+  height: 6vw;
+}
+
+.headerWrapper .search {
+  width: 3vw;
+  height: 3vw;
+}
+
+.headerMenu {
+  display: flex;
+  flex-basis: 60%;
+  justify-content: flex-end;
+  gap: 1.2vw;
+}
+
+a {
+  text-decoration: none;
+  transition: 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+a:link,
+a:visited,
+a:focus {
+  color: black;
+}
+
+a:hover {
+  color: rgb(55, 55, 55);
+  font-size: 1.6vw;
+  transition: 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+@media screen and (max-width: 1400px) {
+  .logo {
+    width: 13vw;
+    height: 13vw;
+  }
+
+  .headerWrapper {
+    font-size: 3vw;
+    display: flex;
+    height: 11vw;
+  }
+
+  .headerWrapper .search {
+    width: 5vw;
+    height: 5vw;
+  }
+
+  .headerWrapper .imgBlock {
+    flex-basis: 10%;
+  }
+}
+
+/* header-styles-end */
+
+/* list1-styles-start */
+
+.List1_mainText {
+  display: flex;
+  height: 40vw;
+  border-bottom: 0.1vw solid black;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.List1_mainText h1 {
+  font-family: "Lora";
+  flex-basis: 97%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 3vw;
+}
+
+@media screen and (max-width: 1400px) {
+  .List1_mainText {
+    padding-top: 8vw;
+    height: 50vw;
+    border: 0;
+  }
+
+  .List1_mainText h1 {
+    font-size: 5vw;
+  }
+}
+
+/* list1-styles-end */
+
+/* list2-styles-start */
+
+.list2Content {
+  font-family: "Lora";
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border: 0;
+}
+
+.list2Content img {
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  width: 40%;
+}
+
+.list2mainText {
+  height: 29.7vw;
+  flex: 0 0 54%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.list2mainText p {
+  margin-top: 22%;
+}
+
+.bottomText {
+  display: flex;
+  font-size: 0.9vw;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 1400px) {
+  .list2Content {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 10%;
+  }
+
+  .list2Content img {
+    width: 100%;
+  }
+  .list2mainText {
+    width: 95%;
+    font-size: 5vw;
+    flex-direction: column-reverse;
+  }
+
+  .list2mainText p {
+    margin-top: 0%;
+  }
+  .bottomText {
+    padding-bottom: 10%;
+    font-size: 2.5vw;
+  }
+}
+
+/* list2-styles-end */
+
+/* list3-styles-start */
+
+.list3Content {
+  display: flex;
+  justify-content: center;
+  border-bottom: 0.1vw solid black;
+}
+
+.secondIMG {
+  padding-top: 1vw;
+  padding-bottom: 3vw;
+  width: 95%;
+}
+
+@media screen and (max-width: 1400px) {
+  .secondIMG {
+    width: 100%;
+    height: 70vw;
+  }
+}
+
+/* list3-styles-end */
+
+/* list4-styles-start */
+
+.list4Content {
+  font-family: "Lora";
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5vw;
+  padding-bottom: 5vw;
+}
+
+.leftContent {
+  padding-right: 3vw;
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leftContent .mainText p {
+  padding: 2vw;
+  font-family: "Montserrat";
+}
+
+.leftContent .line {
+  width: 100%;
+  height: 0.2vw;
+  background-color: black;
+}
+
+.leftContent .underlineText {
+  padding: 2vw;
+  text-align: center;
+  font-size: 1.4vw;
+}
+
+.list4Content .thirdIMG {
+  width: 40%;
+  padding-left: 2.4vw;
+}
+
+@media screen and (max-width: 1400px) {
+  .list4Content {
+    padding-top: 2vw;
+    flex-direction: column-reverse;
+  }
+  .list4Content .thirdIMG {
+    width: 90%;
+    padding: 0;
+  }
+
+  .leftContent .mainText p {
+    font-size: 6vw;
+  }
+
+  .leftContent .underlineText {
+    font-size: 3vw;
+    padding-bottom: 3vw;
+  }
+}
+
+/* list4-styles-end */
+
+/* list5-styles-start */
+
+.list5Content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Lora";
+  font-size: 2.5vw;
+  padding-bottom: 2vw;
+  border-bottom: 0.1vw solid black;
+}
+
+.list5Content .fourthIMG {
+  width: 50%;
+  padding-right: 2.4vw;
+}
+
+.rightContent {
+  padding-left: 2vw;
+  flex: 0 0 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rightContent .mainText p {
+  padding: 2vw;
+  font-family: "Montserrat";
+}
+
+.rightContent .line {
+  width: 100%;
+  height: 0.2vw;
+  background-color: black;
+}
+
+.rightContent .underlineText {
+  padding: 2vw;
+  text-align: center;
+  font-size: 1.4vw;
+}
+
+@media screen and (max-width: 1400px) {
+  .list5Content {
+    padding-top: 2vw;
+    flex-direction: column;
+    border-top: 0.1vw solid black;
+  }
+  .rightContent .mainText p {
+    font-size: 6vw;
+  }
+  .rightContent .underlineText {
+    font-size: 3vw;
+    padding-bottom: 3vw;
+  }
+  .list5Content .fourthIMG {
+    width: 90%;
+    padding: 0;
+  }
+}
+
+/* list5-styles-end */
+
+/* list6-styles-start */
+
+.list6Content {
+  padding-top: 4.5vw;
+  display: flex;
+  font-size: 2vw;
+  flex-wrap: wrap;
+}
+
+.higherBlock {
+  display: flex;
+  width: 100%;
+  height: 14vw;
+  padding-bottom: 2vw;
+}
+
+.higherBlock .leftText {
+  font-family: "Montserrat";
+  border-right: 0.1vw solid black;
+  width: 50%;
+  padding: 2vw;
+}
+
+.higherBlock .rightText {
+  font-family: "Lora";
+  width: 50%;
+  font-size: 1.5vw;
+  padding: 2vw;
+}
+
+.lowerBlock {
+  display: flex;
+  flex-wrap: wrap;
+  height: 43vw;
+  font-family: "Montserrat";
+  font-size: 1vw;
+  border-top: 0.1vw solid black;
+}
+
+.lowerBlock p {
+  text-align: center;
+}
+
+.fotoBlock1,
+.fotoBlock2,
+.fotoBlock3 {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fotoBlock1,
+.fotoBlock2 {
+  border-right: 0.1vw solid black;
+}
+
+.lowerBlock img {
+  width: 35%;
+  padding-top: 2vw;
+}
+
+.timeBlock {
+  display: flex;
+  border-top: 0.1vw solid black;
+  width: 100%;
+  align-items: flex-end;
+  border-bottom: 0.1vw solid black;
+}
+
+.timeBlock p {
+  text-align: left;
+  padding: 1vw;
+}
+
+.timeBlock .time {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 5vw;
+}
+
+.timeBlock .timeText {
+  font-family: "Lora";
+  font-size: 1.3vw;
+  padding-bottom: 2vw;
+}
+
+.timeBlock div {
+  width: 50%;
+}
+
+@media screen and (max-width: 1400px) {
+  .higherBlock .leftText {
+    padding-left: 5.7vw;
+    font-size: 4.8vw;
+  }
+  .higherBlock .rightText {
+    font-size: 2.7vw;
+    padding-left: 3.6vw;
+    padding-right: 3vw;
+  }
+  .fotoBlock1,
+  .fotoBlock2,
+  .fotoBlock3 {
+    width: 33%;
+    height: 40vw;
+  }
+
+  .lowerBlock img {
+    width: 75%;
+  }
+
+  .lowerBlock p {
+    font-size: 2vw;
+  }
+
+  .timeBlock {
+    height: 15vw;
+  }
+
+  .timeBlock .time p {
+    font-size: 6vw;
+  }
+
+  .timeBlock .timeText p {
+    font-size: 2.7vw;
+  }
+}
+
+/* list6-styles-end */
+
+/* footer-styles-start */
+
+.footerWrapper {
+  display: flex;
+}
+
+.footerLeftContent,
+.footerRightContent {
+  display: flex;
+  flex-direction: column;
+  font-family: "Lora";
+  font-size: 1.5vw;
+  width: 50%;
+}
+
+.blockLine {
+  display: flex;
+  width: 100%;
+}
+
+.blockLine div {
+  height: 10vw;
+  width: 100%;
+  border-right: 0.1vw solid black;
+  border-bottom: 0.1vw solid black;
+}
+
+.blockLine p {
+  padding: 1vw;
+}
+
+.copyright {
+  display: flex;
+  height: 3vw;
+  font-size: 1vw;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 0.1vw solid black;
+  font-family: "Montserrat";
+}
+
+.copyright .year {
+  padding-left: 1vw;
+}
+
+.copyright .author {
+  padding-right: 1vw;
+}
+
+.footerRightContent {
+  display: flex;
+  flex-direction: column;
+  padding: 1vw;
+  font-size: 2.3vw;
+}
+
+.footerRightContent .questionText {
+  z-index: 1;
+}
+
+.submitEmail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.2vw;
+}
+
+.submitEmail input {
+  flex: 0 1 80%;
+  font-size: 2.3vw;
+  font-family: "Lora";
+  outline: none;
+  border: none;
+}
+
+.submitEmail a {
+  padding-right: 2vw;
+  font-family: "Montserrat";
+  font-size: 1.3vw;
+  color: rgb(129, 129, 129);
+}
+
+@media screen and (max-width: 1400px) {
+  .footerWrapper {
+    padding-top: 12.2vw;
+  }
+  .footerRightContent {
+    font-size: 2.7vw;
+    width: 70%;
+  }
+  .blockLine {
+    font-size: 2vw;
+  }
+  .copyright {
+    font-size: 1.5vw;
+  }
+  .submitEmail {
+    padding-top: 1.5vw;
+  }
+  .submitEmail input {
+    flex: 0 0 40%;
+    font-size: 3.6vw;
+  }
+  .submitEmail .submit {
+    font-size: 2vw;
+    padding-top: 1vw;
+  }
+}
+
+/* footer-styles-end */
